@@ -1,12 +1,1 @@
-set up the databse:
 
-CREATE DATABASE task_manager;
-USE task_manager;
-
-
-CREATE TABLE tasks (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    due_date DATE NOT NULL,
-    status ENUM('Pending', 'In Progress', 'Completed') DEFAULT 'Pending'
-);
